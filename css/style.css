@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 .todo-list {
-  background-color: #0B2027;
+  background-color: #bd350c;
   font-family: "Space Mono", monospace;
   padding: 1rem;
   min-width: 400px;
@@ -38,6 +38,7 @@ body {
 }
 
 .form-input {
+  border-radius: 5px;
   outline: none;
   background-color: #F6F1D1;
   border-color: rgba(255, 255, 255, 0.1);
@@ -54,7 +55,7 @@ body {
 .form-button:hover {
   color: #F6F1D1;
   background: rgba(246, 241, 209, 0.1);
-}
+} */
 
 body {
   margin: 0;
@@ -69,18 +70,19 @@ body {
 }
 
 .todo-list {
-  background-color: #0B2027;
+  border-radius: 10px;
+  background-color: #F2CB05;
   font-family: "Space Mono", monospace;
-  padding: 1rem;
+  padding: 16px;
   min-width: 400px;
   min-height: 300px;
 }
 
 .title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
-  font-size: 1.5rem;
+  border-bottom: 1px solid #196774;
+  font-size: 25px;
   font-family: "BioRhyme", serif;
-  color: #F6F1D1;
+  color: #196774;
 }
 
 .form {
@@ -88,9 +90,9 @@ body {
   justify-content: center;
 }
 .form-input, .form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 12px;
 }
 .form-input {
   outline: none;
@@ -100,13 +102,16 @@ body {
 .form-button {
   border: 1px;
   background: #F6F1D1;
+  color: #196774;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 0.25rem;
+  margin-left: 4px;
 }
 .form-button:hover {
-  color: #F6F1D1;
+  color: #F2CB05;
   background: rgba(246, 241, 209, 0.1);
+  background-color:  #196774;
+  border: 3px solid #F2CB05;
 }
 
 .list {
@@ -120,8 +125,8 @@ body {
   color: #F6F1D1;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+  margin-bottom: 8px;
+  padding: 16px 48px;
 }
 
 .check-button, .delete-button {
