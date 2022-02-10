@@ -1,0 +1,2 @@
+Nesse projeto focarei na persistência de dados utilizando local storage. Irei trabalhar com a API de armazenamento do navegador, utilizando session storage e local storage, e fazer manipulações para pegar os dados que irei armazenar no local storage e exibir na página.
+Utilizarei ferramentas como HTML, CSS e Javascript para a construção dessa aplicação.
