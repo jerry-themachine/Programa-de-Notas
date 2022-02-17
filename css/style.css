@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
 }
 
@@ -15,7 +15,7 @@ body {
     background-color: #F2CB05;
     font-family: "Space Mono", monospace;
     padding: 16px;
-    min-width: 400px;
+    min-width: 550px;
     min-height: 300px;
 }
 
@@ -38,11 +38,9 @@ body {
     margin: 10px;
 }
 
-/* .form-input {
-    outline: none;
-    background-color: #F6F1D1;
-    border-color: rgba(255, 255, 255, 0.1);
-} */
+.form-input {
+    width: 300px;
+}
 
 
   
@@ -85,9 +83,10 @@ animation: 1.2s animateBorder ease infinite;
 .form-button:hover {
     color: #F2CB05;
     border-radius: 7px;
+    margin-left: 4px;
     background: rgba(246, 241, 209, 0.1);
     background-color:  #196774;
-    border: 3px solid #F2CB05;
+   
 }
 
 .list {
@@ -100,11 +99,11 @@ animation: 1.2s animateBorder ease infinite;
     background-color: rgba(255, 255, 255, 0.1);
     color: #196774;
     background: #F6F1D1;
-    display: flex;  
-    border-radius: 5px;
+    display: flex;
     justify-content: space-between;
+    border-radius: 5px;    
     margin-bottom: 8px;
-    padding: 10px 48px;
+    padding: 10px 18px;
 }
 
 .check-button, .delete-button {
@@ -115,6 +114,18 @@ animation: 1.2s animateBorder ease infinite;
     outline: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-right: 10px;    
+}
+
+.check-button:hover {
+    color: #196774;
+    border: 2px solid #196774;
+    background-color: #FFFFFF;
+}
+.delete-button:hover {
+    color: #BF1304;
+    border: 2px solid #BF1304;
+    background-color: #FFFFFF;
 }
 
 .item.done .check-button {
@@ -136,9 +147,16 @@ animation: 1.2s animateBorder ease infinite;
 }
 
 .content {
-    margin: 0;
+    margin: 0px;
+}
+
+p.content {
+    margin-right: 10px;
+    text-align: left;    
+    width: 340px;
 }
 
 .item.done .content {
     text-decoration: line-through;
+    color: #27230b;
 }
