@@ -19,7 +19,7 @@
             </h1>
 
             <form class="form" action="">
-                <input class="form-input" placeholder="Digite aqui sua nota" type="text" data-form-input>
+                <input id="input" class="form-input" method="post" placeholder="Digite aqui sua nota" type="text" data-form-input required oninput="this.setCustomValidity(`Preencha o campo para continuar`)">
                 <button class="form-button" data-form-button> Novo Item </button>
             </form>
 
@@ -30,6 +30,7 @@
     </div>
 
     <script type="module" src="listaDetarefas.js"></script>
+   
 
 </body>
 
