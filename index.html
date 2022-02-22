@@ -19,8 +19,16 @@
             </h1>
 
             <form class="form" action="">
-                <input id="input" class="form-input" method="post" placeholder="Por favor, insira no máximo 35 caractéres" maxlength="35" type="text" data-form-input required oninput="this.setCustomValidity(`Preencha o campo para continuar`)">
+
+                <input id="input" class="form-input" method="post" placeholder="Por favor, insira no máximo 35 caractéres" 
+                maxlength="35" type="text" data-form-input required 
+                oninput="this.setCustomValidity(`Por favor preencha este campo`)">
+
+                <input id="data" type="date" min="1900-01-01" class="form-input-data" method="post" data-form-calendario 
+                oninput="this.setCustomValidity(`Por favor preencha a data`)" required>
+                
                 <button class="form-button" data-form-button> Novo Item </button>
+
             </form>
 
             <ul class="list" data-list>

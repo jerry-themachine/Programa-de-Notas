@@ -39,12 +39,32 @@ body {
 }
 
 .form-input {
+    border: 2px solid #196774;
     width: 300px;
 }
 
+.form-input-data {
+    background-color: #F6F1D1;
+    color: #196774;   
+    border: 2px solid #196774;
+    border-radius: 5px;   
+    padding: 2px;
+    font-size: 12px;
+    margin: 10px;
+    width: 170px;
+}
+
+.form-input-data:hover {
+    background-color: #196774;
+    color: #F2CB05;
+    opacity: .8;       
+    cursor: pointer;
+}
+
+
 
   
-input:valid {
+#input:valid {
     border: 1px solid #FFFFFF;
     outline: 3px dashed ;
     box-shadow: 0 0 0 3px #35c6ea;
@@ -58,7 +78,7 @@ input:valid {
       }
   }
 
-input:invalid {
+#input:invalid {
 outline: 5px dashed #198774;
 box-shadow: 0 0 0 6px #EA3556;
 animation: 1.2s animateBorder ease infinite;
@@ -74,6 +94,7 @@ animation: 1.2s animateBorder ease infinite;
 .form-button {
     border: 1px;
     background: #F6F1D1;
+    border: 2px solid #196774;
     color: #196774;
     text-transform: uppercase;
     cursor: pointer;
@@ -151,9 +172,10 @@ animation: 1.2s animateBorder ease infinite;
 }
 
 p.content {
+    font-size: 13px;
     margin-right: 10px;
     text-align: left;    
-    width: 340px;
+    width: 360px;
 }
 
 .item.done .content {
