@@ -2,10 +2,12 @@
 import BotaoConclui from './concluirTarefa.js';
 import BotaoDeleta from './deletaTarefa.js';
 
-//Criando array para armazenar tarefas
-let tarefas = [];
+
 
 export let criarTarefa = (evento) => { //Criando evento de click para inserir nova lista
+
+    //Transformando string em objeto e buscando os dados no Local Storage
+    let tarefas = JSON.parse(localStorage.getItem('tarefas')) || [];
 
     var novoInput = document.getElementById("input");
     var dataInput = document.getElementById("data");
@@ -54,11 +56,11 @@ export let criarTarefa = (evento) => { //Criando evento de click para inserir no
                         valor, dataFormatada
                     }
 
-                    //Inserindo tarefaas no array 
-                    tarefas.push(dados);
+                    //Criando um array para armazenar as tarefas buscadas no Local Storage
+                    let tarefasAtualizadas = [... tarefas, dados];
 
                     //Transformando objeto em string e armazenando em Local Storage
-                    localStorage.setItem('tarefas', JSON.stringify(tarefas))
+                    localStorage.setItem('tarefas', JSON.stringify(tarefasAtualizadas));
 
                     tarefa.appendChild(BotaoConclui());
                     tarefa.appendChild(BotaoDeleta());
