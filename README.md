@@ -1,2 +1,2 @@
-Nesse projeto focarei na persistência de dados utilizando local storage. Irei trabalhar com a API de armazenamento do navegador, utilizando session storage e local storage, e fazer manipulações para pegar os dados que irei armazenar no local storage e exibir na página.
-Utilizarei ferramentas como HTML, CSS e Javascript para a construção dessa aplicação.
+Este projeto foi elaborado com a utilização da persistência de dados e a utilização da API de armazenamento do navegador, através do Local Storage. Utilizei métodos para manipulações dos dados fornecidos pelo usuário através dos formulários, como inserir e pegar os dados armazenados no Browser.
+As ferramentas e tecnologias utilizadas para a construção dessa aplicação foram HTML, CSS, Javascript Vanilla e o Google DevTools.

@@ -19,7 +19,7 @@ let concluirTarefa = (evento) => {
      let tarefCompleta = botaoConcluir.parentElement;// Pegando o pai do botão, o elemento 'li', utilizando  'parentElement'
 
      //Executando a classe 'done' no CSS a partir do momento de click do botão, através do método 'toggle'
-     tarefCompleta.classList.toggle('done');//Toggle deveolve um booleano (verdaeiro/clicado ou falso/não-clicado) 
+     tarefCompleta.classList.toggle('done');//Toggle devolve um booleano (verdaeiro/clicado ou falso/não-clicado) 
 };
 
 export default BotaoConclui;
